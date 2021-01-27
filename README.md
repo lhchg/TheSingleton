@@ -27,7 +27,7 @@ we can use Singleton to make global variable like this sample
 
 
 
-we only add a get() function in Singleton
+we only add a get() function in Singleton.
 let the struct inherit the Singleton
 
 	struct Argument : public Singleton<Argument>
@@ -39,12 +39,13 @@ let the struct inherit the Singleton
 			};
 		};
 	};
+	
 
 
-In the main function, we can call get() function which belongs to the struct,
+In the main() function, we can call get() which belongs to the struct,
 it will build a object
-when we call get() function again in another function, the struct's object will not rebuild,
-so the argument in struct will be the blobal variable
+when we call get() again in another function, the struct's object will not rebuild,
+so the argument in struct will be the global variable
 
 	void print()
 	{
@@ -64,3 +65,4 @@ so the argument in struct will be the blobal variable
 		return 0;
 
 	}
+	
