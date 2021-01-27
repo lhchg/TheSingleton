@@ -10,6 +10,7 @@ namespace StructInheritance {
 		{
 			if (!instance)
 			{
+				cout << "new Ty() " << endl;
 				instance = new(nothrow) Ty();
 			}
 			return instance;
