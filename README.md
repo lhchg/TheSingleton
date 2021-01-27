@@ -1,7 +1,7 @@
 # Singleton
 some usage for Singleton
 
-we can use Singleton to make global variable like this sample
+we can use Singleton to make global variable like this sample.
   
 
 	template<typename Ty>
@@ -43,9 +43,9 @@ let the struct inherit the Singleton
 
 
 In the main() function, we can call get() which belongs to the struct,
-it will build a object
-when we call get() again in another function, the struct's object will not rebuild,
-so the argument in struct will be the global variable
+it will build a object.
+When we call get() again in another function, the struct's object will not rebuild,
+so the argument in struct will be the global variable.
 
 	void print()
 	{
