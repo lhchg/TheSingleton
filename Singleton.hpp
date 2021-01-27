@@ -12,10 +12,13 @@ namespace StructInheritance {
 			{
 				instance = new(nothrow) Ty();
 			}
+			return instance;
 		}
 
 	private:
 		static Ty* instance;
 	};
 
+	template<typename Ty>
+	Ty* Singleton<Ty>::instance = nullptr;
 }
