@@ -1,0 +1,2 @@
+# StructInheritance
+Structure inheritance
